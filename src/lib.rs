@@ -1,4 +1,5 @@
-use nannou::osc;
+use nannou::prelude::*;
+use nannou_osc as osc;
 use std::collections::HashMap;
 use std::time::Instant;
 
@@ -90,7 +91,7 @@ impl State {
             if then > now {
                 return None
             } else {
-                let duration = nannou::state::time::Duration::from(now.duration_since(then));
+                let duration = now.duration_since(then);
                 Some(duration.secs())
             }
         })
@@ -103,7 +104,7 @@ impl State {
             if then > now {
                 None
             } else {
-                let duration = nannou::state::time::Duration::from(now.duration_since(then));
+                let duration = now.duration_since(then);
                 Some(duration.secs())
             }
         })
