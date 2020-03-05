@@ -5,5 +5,5 @@ authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-nannou = "0.10"
+nannou = "0.13"
 nannou_osc = "0.1"
