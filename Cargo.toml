@@ -2,8 +2,9 @@
 name = "jen_rx"
 version = "0.1.0"
 authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
-edition = "2018"
+edition = "2021"
+resolver="2"
 
 [dependencies]
-nannou = "0.13"
-nannou_osc = "0.1"
+nannou = "0.18"
+nannou_osc = "0.18"
